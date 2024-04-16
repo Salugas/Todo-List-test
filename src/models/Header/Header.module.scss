@@ -1,0 +1,10 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+
+  & span {
+    color: rgb(255, 65, 195);
+    font-size: 6rem;
+    font-weight: 100;
+  }
+}

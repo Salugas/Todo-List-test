@@ -1,0 +1,39 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+
+  font-size: 2rem;
+  font-weight: 300;
+
+  & button {
+    font-size: 2rem;
+    font-weight: 300;
+    transition: all 0.2s ease-in;
+    &:hover {
+      color: rgb(255, 0, 0);
+
+      transition: all 0.2s ease-in;
+    }
+  }
+
+  & span {
+    display: block;
+    padding: 1rem;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.active {
+  border-radius: 0.3rem;
+  border: 0.1rem solid black;
+}

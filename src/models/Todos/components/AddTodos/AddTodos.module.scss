@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.icons {
+  transition: all 0.2s ease-in;
+  &:hover {
+    transform: scale(1.1);
+    color: rgb(10, 114, 0);
+    transition: all 0.2s ease-in;
+  }
+}
