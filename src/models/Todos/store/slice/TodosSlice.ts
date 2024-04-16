@@ -29,9 +29,6 @@ export const TodosSlice = createSlice({
     },
 
     currentComplitedTodo: (state) => {
-      if ((state.modifiedTodo.length = 0)) {
-        state.todo.length = 0
-      }
       state.coplitedTodo = state.todo.filter(
         (item) => item.complited === true
       ).length
@@ -46,6 +43,9 @@ export const TodosSlice = createSlice({
 
     removeTodo: (state, action: PayloadAction<string>) => {
       state.todo = state.todo.filter((item) => item.id !== action.payload)
+      state.modifiedTodo = state.modifiedTodo.filter(
+        (item) => item.id !== action.payload
+      )
     },
     clearTodoList: (state) => {
       state.todo.length = 0
